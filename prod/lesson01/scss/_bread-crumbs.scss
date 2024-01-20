@@ -1,0 +1,29 @@
+.bread-crumbs {
+  background-color: $white4-fill;
+  padding: 60px 0;
+  text-transform: uppercase;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    color: $pink;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  &__path {
+    color: $grey3;
+    & > span {
+      color: $pink;
+      font-weight: 700;
+    }
+  }
+
+  &__link {
+    display: inline;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

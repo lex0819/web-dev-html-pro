@@ -1,0 +1,35 @@
+.delivery {
+  padding: 104px 0;
+  background-color: $black;
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__item {
+    max-width: 348px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    &-title {
+      color: $white2;
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    &-desc {
+      color: $white2;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.filter {
+  padding: 51px 0 64px;
+
+  &__inner {
+    display: flex;
+    justify-content: start;
+    gap: 320px;
+  }
+
+  &__big {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    &_text {
+      color: $black1;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    &_icon {
+    }
+  }
+
+  &__choise {
+    display: flex;
+    gap: 28px;
+
+    &_item {
+      color: $grey4;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
