@@ -1,0 +1,31 @@
+.pagination {
+  width: 300px;
+  margin: 0 auto;
+  padding: 48px 0 96px;
+
+  &__box {
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $white5;
+    padding: 12px 15px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    color: $grey5;
+    font-size: 16px;
+    font-weight: 300;
+
+    &_active {
+      color: $pink4;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+}
