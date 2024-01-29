@@ -529,9 +529,10 @@ body {
 }
 .cart__inner {
   display: flex;
-  gap: 10vw;
+  justify-content: space-between;
 }
 .cart__product {
+  width: 652px;
   display: flex;
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
@@ -539,14 +540,18 @@ body {
   width: 262px;
 }
 .cart__product-info {
+  flex-grow: 1;
   padding: 21px 22px 62px 31px;
 }
 .cart__product-head {
   display: flex;
+  gap: 16px;
   justify-content: space-between;
 }
+.cart__product__link {
+  flex-grow: 1;
+}
 .cart__product-title {
-  max-width: 262px;
   color: #222;
   font-size: 24px;
   font-weight: 400;
