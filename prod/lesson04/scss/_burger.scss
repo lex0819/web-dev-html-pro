@@ -1,0 +1,73 @@
+.burger-box {
+  position: relative;
+}
+
+.burger__icon {
+  cursor: pointer;
+}
+
+#burger {
+  position: absolute;
+  left: -99999px;
+  visibility: hidden;
+}
+
+.menu__burger {
+  position: fixed;
+  z-index: 9;
+  width: 232px;
+  top: 77px;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  padding-top: 16px;
+  padding-left: 34px;
+  padding-right: 17px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+
+  &-close {
+    align-self: flex-end;
+    padding-bottom: 9px;
+  }
+
+  &-title {
+    color: $black;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 24px;
+  }
+
+  &-list {
+    padding-bottom: 12px;
+  }
+
+  &-subtitle {
+    color: $pink;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 12px;
+  }
+
+  &-sublist {
+    padding-left: 21px;
+    padding-bottom: 9px;
+  }
+
+  &-item {
+    color: $grey4;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 11px;
+    transition: color 0.4s ease;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+}
+
+#burger:checked ~ .menu__burger {
+  transform: translateX(0);
+}

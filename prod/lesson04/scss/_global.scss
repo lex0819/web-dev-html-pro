@@ -1,0 +1,14 @@
+body {
+  font-family: $font-family;
+  color: $black;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
