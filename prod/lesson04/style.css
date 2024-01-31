@@ -173,17 +173,27 @@ body {
   font-weight: 400;
 }
 .bread-crumbs__path {
-  color: #636363;
-}
-.bread-crumbs__path > span {
-  color: #f16d7f;
-  font-weight: 700;
+  display: flex;
+  gap: 8px;
 }
 .bread-crumbs__link {
-  display: inline;
+  color: #636363;
+  font-weight: 300;
 }
 .bread-crumbs__link:hover {
   text-decoration: underline;
+}
+.bread-crumbs__item:last-child .bread-crumbs__link {
+  color: #f16d7f;
+  font-weight: 700;
+}
+.bread-crumbs__item:not(:last-child)::after {
+  content: "/";
+  padding-left: 3px;
+  padding-right: 0;
+}
+.bread-crumbs__item:last-child:hover .bread-crumbs__link {
+  text-decoration: none;
 }
 
 .center {
