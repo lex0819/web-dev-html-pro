@@ -1,0 +1,34 @@
+.footer {
+  background-color: $black;
+  padding: 24px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.copyright {
+  color: $white2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.path-tex,
+.path-fill {
+  transition: fill 0.5s ease;
+}
+
+.social {
+  display: flex;
+  gap: 7px;
+
+  &__link:hover .path-fill {
+    fill: $pink;
+  }
+
+  &__link:hover .path-text {
+    fill: $white;
+  }
+}

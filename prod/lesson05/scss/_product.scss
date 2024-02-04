@@ -1,0 +1,127 @@
+.product {
+  margin-top: 96px;
+  margin-bottom: 60px;
+
+  &__title {
+    color: $black;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__text {
+    color: $grey2;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex-basis: 360px;
+    background-color: #f8f8f8;
+
+    &-title {
+      color: #000;
+      font-size: 13px;
+      font-weight: 400;
+      text-align: left;
+    }
+
+    &-text {
+      text-align: left;
+    }
+
+    &-price {
+      color: $pink;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: left;
+    }
+  }
+
+  &__pic {
+    background: rgb(58, 56, 56);
+    position: relative;
+
+    &:hover .product__img {
+      opacity: 0.24;
+    }
+
+    &:hover .product__add {
+      opacity: 1;
+    }
+  }
+
+  &__img {
+    display: block;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  &__add {
+    width: 141px;
+    height: 44px;
+    border: 1px solid $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    position: absolute;
+    top: 188px;
+    left: 111px;
+    right: auto;
+    bottom: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    &:hover {
+      box-shadow: 1px 1px 10px $white;
+    }
+
+    &_img {
+      width: 26px;
+    }
+
+    &_text {
+      color: $white;
+    }
+  }
+
+  &__desc {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__all {
+    display: block;
+    width: 215px;
+    margin: 48px auto 0;
+    padding: 15px 39px;
+    border: 1px solid $pink2;
+    color: $pink2;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: $white;
+    transition: background-color 0.5s ease, color 0.5s linear;
+
+    &:hover {
+      color: $white;
+      background-color: $pink2;
+    }
+  }
+}
+
+.catalog {
+  margin: 0;
+}
