@@ -2,10 +2,21 @@
   background-color: $black;
   padding: 24px 0;
 
+  @media (max-width: 760px) {
+    padding: 43px 0 9px 0;
+  }
+
   &__inner {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media (max-width: 760px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 40px;
+    }
   }
 }
 

@@ -2,6 +2,16 @@
   margin-top: 96px;
   margin-bottom: 60px;
 
+  @media (max-width: 990px) {
+    margin-top: 165px;
+    margin-bottom: 65px;
+  }
+
+  @media (max-width: 760px) {
+    margin-top: 64px;
+    margin-bottom: 96px;
+  }
+
   &__title {
     color: $black;
     font-size: 30px;
@@ -15,6 +25,14 @@
     font-weight: 400;
     text-align: center;
     margin-bottom: 48px;
+
+    @media (max-width: 990px) {
+      margin-bottom: 73px;
+    }
+
+    @media (max-width: 760px) {
+      margin-bottom: 65px;
+    }
   }
 
   &__list {
@@ -22,6 +40,10 @@
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+
+    @media (max-width: 990px) {
+      gap: 16px;
+    }
   }
 
   &__item {
@@ -118,6 +140,14 @@
     &:hover {
       color: $white;
       background-color: $pink2;
+    }
+
+    @media (max-width: 990px) {
+      margin: 32px auto 0;
+    }
+
+    @media (max-width: 760px) {
+      margin: 40px auto 0;
     }
   }
 }

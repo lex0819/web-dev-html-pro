@@ -1,24 +1,35 @@
 .top {
   background-color: #f1e4e6;
-  height: 764px;
+  height: auto;
 
   &__inner {
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 760px) {
+      height: 363px;
+    }
   }
 
   &__img {
     width: auto;
     height: 764px;
+
+    @media (max-width: 990px) {
+      height: 368px;
+    }
+
+    @media (max-width: 760px) {
+      display: none;
+    }
   }
 
   &__title {
     color: $black;
     font-size: 48px;
     font-weight: 900;
-    margin-top: 290px;
-    margin-right: 101px;
+    margin-bottom: 90px;
     padding-left: 16px;
     border-left: 12px solid $pink;
     flex-basis: 405px;
@@ -32,6 +43,15 @@
       & > span {
         color: $pink;
       }
+    }
+
+    @media (max-width: 990px) {
+      font-size: 44px;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 760px) {
+      font-size: 38px;
     }
   }
 }

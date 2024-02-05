@@ -5,7 +5,14 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    gap: 22px;
+    column-gap: 22px;
+    row-gap: 40px;
+
+    @media (max-width: 760px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 .reg {
@@ -75,10 +82,18 @@
   font-size: 24px;
   font-weight: 300;
 
+  @media (max-width: 990px) {
+    font-size: 16px;
+  }
+
   &__title {
     font-size: inherit;
     font-weight: inherit;
     margin-bottom: 22px;
+
+    @media (max-width: 990px) {
+      margin-bottom: 32px;
+    }
   }
 
   &__text {
@@ -103,6 +118,10 @@
       width: 20px;
       height: 16px;
       background-image: url("./img/icon-check.svg");
+    }
+
+    @media (max-width: 990px) {
+      margin-bottom: 24px;
     }
   }
 }

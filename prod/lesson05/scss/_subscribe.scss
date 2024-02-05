@@ -6,11 +6,28 @@
   padding-top: 97px;
   padding-bottom: 126px;
 
+  @media (max-width: 990px) {
+    padding-top: 64px;
+    padding-bottom: 140px;
+  }
+
+  @media (max-width: 760px) {
+    padding-bottom: 110px;
+  }
+
   &__inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+
+    @media (max-width: 990px) {
+      gap: 48px;
+    }
+
+    @media (max-width: 760px) {
+      gap: 60px;
+    }
   }
 
   &__item {
