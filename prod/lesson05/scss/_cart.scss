@@ -14,7 +14,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: 8px;
 
     @media (max-width: 990px) {
       flex-direction: column;
@@ -24,7 +24,7 @@
   }
 
   &__product {
-    width: 652px;
+    max-width: 652px;
     display: flex;
     box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 
