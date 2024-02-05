@@ -11,14 +11,16 @@
 
 Страницы проекта
 
-Главная index.html
-Каталог catalog.html
-Корзина cart.html
-Регистрация reg.html
-Продукт product.html
+- Главная - _index.html_
+- Каталог - _catalog.html_
+- Корзина - _cart.html_
+- Регистрация - _reg.html_
+- Продукт - _product.html_
 
 Cм. файлы html в корневой директории
+
 Cм. файлы scss в папке [scss](./scss/)
 
 См. готовые страницы проекта на хостинге по ссылке
+
 https://webdev-html-pro.elenivan.ru/lesson05
