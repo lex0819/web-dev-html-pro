@@ -37,3 +37,12 @@ https://validator.w3.org
 
 2. catalog.html
    ![](./validatorW3/catalog.png)
+
+3. product.html
+   ![](./validatorW3/product.png)
+
+4. cart.html
+   ![](./validatorW3/cart.png)
+
+5. reg.html
+   ![](./validatorW3/reg.png)
