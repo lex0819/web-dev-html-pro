@@ -33,16 +33,21 @@ https://webdev-html-pro.elenivan.ru/lesson06
 https://validator.w3.org
 
 1. index.html
-   ![](./validatorW3/index.png)
+
+   ![index](./validatorW3/index.png)
 
 2. catalog.html
-   ![](./validatorW3/catalog.png)
+
+   ![catalog](./validatorW3/catalog.png)
 
 3. product.html
-   ![](./validatorW3/product.png)
+
+   ![product](./validatorW3/product.png)
 
 4. cart.html
-   ![](./validatorW3/cart.png)
+
+   ![cart](./validatorW3/cart.png)
 
 5. reg.html
-   ![](./validatorW3/reg.png)
+
+   ![reg](./validatorW3/reg.png)
