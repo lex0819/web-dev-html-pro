@@ -23,10 +23,17 @@ Cм. файлы scss в папке [scss](./scss/)
 
 См. готовые страницы проекта на хостинге по ссылке
 
+### Хостинг
+
 https://webdev-html-pro.elenivan.ru/lesson06
+
+### Валидатор
 
 Проверка сайта на валидность проводилась на сервисе
 https://validator.w3.org
 
-index.html
-![](./validatorW3/index.png)
+1. index.html
+   ![](./validatorW3/index.png)
+
+2. catalog.html
+   ![](./validatorW3/catalog.png)
