@@ -1,0 +1,127 @@
+.main {
+  padding-top: 64px;
+  padding-bottom: 96px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 22px;
+    row-gap: 40px;
+
+    @media (max-width: 760px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.reg {
+  width: 360px;
+  flex-shrink: 0;
+
+  &__fieldset {
+    border: none;
+    outline: none;
+    padding: 1px 0;
+    margin-bottom: 32px;
+  }
+
+  &__legend {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 1px solid #a4a4a4;
+    color: #b1b1b1;
+    padding: 15px 17px;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+    &::placeholder {
+      color: #b1b1b1;
+    }
+  }
+
+  &__sex {
+    padding-top: 11px;
+    display: flex;
+    gap: 20px;
+    border: none;
+    outline: none;
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__info {
+    font-size: 11px;
+  }
+
+  &__btn {
+    padding: 16px 29px;
+    color: $white;
+    background-color: $pink;
+    border: 1px solid $pink;
+    transition: filter 0.4s ease;
+
+    &:hover {
+      filter: brightness(150%);
+    }
+  }
+}
+
+.loyalty {
+  max-width: 652px;
+  flex-shrink: 1;
+  font-size: 24px;
+  font-weight: 300;
+
+  @media (max-width: 990px) {
+    font-size: 16px;
+  }
+
+  &__title {
+    font-size: inherit;
+    font-weight: inherit;
+    margin-bottom: 22px;
+
+    @media (max-width: 990px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__text {
+    font-size: inherit;
+    font-weight: inherit;
+    margin-bottom: 22px;
+  }
+
+  &__list {
+    padding-left: 42px;
+  }
+
+  &__item {
+    margin-bottom: 16px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -42px;
+      top: 7px;
+      width: 20px;
+      height: 16px;
+      background-image: url("./img/icon-check.svg");
+    }
+
+    @media (max-width: 990px) {
+      margin-bottom: 24px;
+    }
+  }
+}

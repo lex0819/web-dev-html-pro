@@ -1,0 +1,57 @@
+.bread-crumbs {
+  background-color: $white4-fill;
+  padding: 60px 0;
+  text-transform: uppercase;
+
+  @media (max-width: 760px) {
+    height: 148px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 760px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+    }
+  }
+  &__title {
+    color: $pink;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  &__path {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__link {
+    color: $grey3;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+
+  &__item:last-child .bread-crumbs__link {
+    color: $pink;
+    font-weight: 700;
+  }
+  &__item:not(:last-child)::after {
+    content: "/";
+    padding-left: 3px;
+    padding-right: 0;
+  }
+
+  &__item:last-child:hover .bread-crumbs__link {
+    text-decoration: none;
+  }
+}

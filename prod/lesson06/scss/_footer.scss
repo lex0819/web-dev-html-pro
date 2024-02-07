@@ -1,0 +1,45 @@
+.footer {
+  background-color: $black;
+  padding: 24px 0;
+
+  @media (max-width: 760px) {
+    padding: 43px 0 9px 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 760px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+}
+
+.copyright {
+  color: $white2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.path-tex,
+.path-fill {
+  transition: fill 0.5s ease;
+}
+
+.social {
+  display: flex;
+  gap: 7px;
+
+  &__link:hover .path-fill {
+    fill: $pink;
+  }
+
+  &__link:hover .path-text {
+    fill: $white;
+  }
+}
