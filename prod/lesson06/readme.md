@@ -27,3 +27,6 @@ https://webdev-html-pro.elenivan.ru/lesson06
 
 Проверка сайта на валидность проводилась на сервисе
 https://validator.w3.org
+
+index.html
+![](./validatorW3/index.png)

@@ -389,22 +389,21 @@ body {
 }
 .pagination__box {
   display: flex;
-  gap: 17px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   border: 1px solid #ebebeb;
   padding: 12px 15px;
 }
-.pagination__list {
-  display: flex;
-  gap: 20px;
+.pagination__arrow:hover path {
+  fill: #f16d7f;
 }
 .pagination__item {
   color: #c4c4c4;
   font-size: 16px;
   font-weight: 300;
 }
-.pagination__item_active {
+.pagination__active {
   color: #ef5b70;
   font-size: 16px;
   font-weight: 300;
