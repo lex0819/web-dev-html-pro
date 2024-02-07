@@ -1238,18 +1238,23 @@ body {
   text-align: center;
 }
 
-.main {
+.main-reg {
   padding-top: 64px;
   padding-bottom: 96px;
 }
-.main__inner {
+@media (max-width: 990px) {
+  .main-reg {
+    padding-top: 40px;
+  }
+}
+.main-reg__inner {
   display: flex;
   justify-content: space-between;
   column-gap: 22px;
   row-gap: 40px;
 }
 @media (max-width: 760px) {
-  .main__inner {
+  .main-reg__inner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1263,7 +1268,6 @@ body {
 .reg__fieldset {
   border: none;
   outline: none;
-  padding: 1px 0;
   margin-bottom: 32px;
 }
 .reg__legend {
